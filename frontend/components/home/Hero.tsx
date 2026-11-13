@@ -12,25 +12,25 @@ export default function Hero() {
       <div className="mx-auto grid w-full max-w-[1600px] flex-1 grid-cols-1 items-center gap-4 px-5 pb-12 pt-8 md:px-9 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:px-12 lg:py-5">
 
         {/* Athlete Image */}
-        <div className="relative order-2 flex h-[380px] items-end justify-center md:h-[480px] lg:order-1 lg:h-full lg:min-h-0">
+        <div className="relative order-2 flex h-[420px] items-end justify-center sm:h-[480px] md:h-[540px] lg:order-1 lg:h-[600px] xl:h-[660px]">
 
-          {/* Background Triangle */}
+          {/* Background Triangle / Accent Shape */}
           <div
-            className="absolute left-[10%] top-[8%] h-[70%] w-[85%] bg-[#C6FF00]"
+            className="absolute left-1/2 top-1/2 h-[78%] w-[85%] max-w-[480px] -translate-x-1/2 -translate-y-[52%] bg-[#C6FF00]"
             style={{
-              clipPath: "polygon(0 0, 100% 72%, 10% 100%)",
+              clipPath: "polygon(18% 4%, 96% 18%, 80% 92%, 4% 82%)",
             }}
           />
 
           {/* Athlete */}
-          <div className="absolute inset-0 z-10">
+          <div className="relative z-10 h-full w-full max-w-[560px]">
             <Image
               src="/images/hero/athlete.png"
               alt="Athlete lifting a heavy barbell"
               fill
               priority
-              sizes="(max-width: 768px) 100vw, 55vw"
-              className="object-contain object-bottom"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain object-bottom drop-shadow-[0_15px_30px_rgba(0,0,0,0.7)]"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Hero() {
           {/* Quote Author */}
           <div className="mt-6 flex justify-end">
             <span className="-skew-x-6 bg-[#FF503D] px-5 py-2 font-[var(--font-barlow)] text-3xl font-extrabold italic text-[#171717] md:text-4xl">
-              JIM ROHN'S
+              JIM ROHN&apos;S
             </span>
           </div>
 

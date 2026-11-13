@@ -24,43 +24,6 @@ const socials = [
   { name: "X", href: "#" },
 ];
 
-function SocialIcon({ type }: { type: string }) {
-  const common = "h-5 w-5";
-
-  if (type === "instagram") {
-    return (
-      <svg viewBox="0 0 24 24" className={common} fill="none" stroke="currentColor" strokeWidth="2.2">
-        <rect x="3" y="3" width="18" height="18" rx="5" />
-        <circle cx="12" cy="12" r="4" />
-        <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none" />
-      </svg>
-    );
-  }
-
-  if (type === "youtube") {
-    return (
-      <svg viewBox="0 0 24 24" className={common} fill="currentColor">
-        <path d="M23 7.1a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.5A3 3 0 0 0 1 7.1 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.9 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.9 31 31 0 0 0-.5-4.9ZM9.5 15.5v-7l6 3.5-6 3.5Z" />
-      </svg>
-    );
-  }
-
-  if (type === "facebook") {
-    return (
-      <svg viewBox="0 0 24 24" className={common} fill="currentColor">
-        <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg viewBox="0 0 24 24" className={common} fill="currentColor">
-      <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.8 5.7 22H2.5l7.3-8.4L1.8 2h6.5l4.5 6.7L18.9 2Zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20Z" />
-    </svg>
-  );
-}
-
-
 export default function Footer() {
   return (
     <footer className="overflow-hidden bg-[#171717] text-[#F3EBDD]">

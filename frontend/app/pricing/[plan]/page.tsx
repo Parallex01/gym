@@ -283,7 +283,7 @@ export default async function PlanDetails({
 
             <p className="mt-6 max-w-lg text-sm leading-7 text-black/60">
               The right membership depends on how you like to train and what
-              you want to achieve. Here's who this plan is designed for.
+              you want to achieve. Here&apos;s who this plan is designed for.
             </p>
           </div>
 

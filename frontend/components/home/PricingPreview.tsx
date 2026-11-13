@@ -196,7 +196,7 @@ export default function PricingPreview() {
               {/* Features */}
               <div className="flex-1 py-6">
                 <h3 className="mb-5 font-[var(--font-barlow)] text-2xl font-black italic md:text-3xl">
-                  WHAT'S INCLUDED
+                  WHAT&apos;S INCLUDED
                 </h3>
 
                 <ul className="flex flex-col gap-4">

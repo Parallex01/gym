@@ -180,6 +180,10 @@ const services = {
 
 type ServiceSlug = keyof typeof services;
 
+export function generateStaticParams() {
+  return Object.keys(services).map((service) => ({ service }));
+}
+
 export default async function ServiceDetailPage({
   params,
 }: {
@@ -229,7 +233,7 @@ export default async function ServiceDetailPage({
 
             <div className="border-l-4 border-[#FF503D] py-2 pl-6">
               <p className="font-[var(--font-barlow)] text-2xl font-black italic text-[#C6FF00]">
-                WHAT IT'S ABOUT
+                WHAT IT&apos;S ABOUT
               </p>
 
               <p className="mt-4 text-sm leading-7 text-white/65 md:text-base">
@@ -265,7 +269,7 @@ export default async function ServiceDetailPage({
               </h2>
 
               <p className="mt-7 max-w-sm text-sm leading-7 text-[#171717]/65">
-                Every part of your fitness journey has a purpose. Here's how
+                Every part of your fitness journey has a purpose. Here&apos;s how
                 this service can help you move closer to your goals.
               </p>
             </div>
@@ -301,7 +305,7 @@ export default async function ServiceDetailPage({
             </p>
 
             <h2 className="mt-5 font-[var(--font-barlow)] text-6xl font-black italic uppercase leading-[0.85] md:text-8xl">
-              WHAT'S
+              WHAT&apos;S
               <br />
               <span className="text-[#C6FF00]">INCLUDED.</span>
             </h2>
@@ -324,7 +328,7 @@ export default async function ServiceDetailPage({
             </div>
 
             <ul className="space-y-6">
-              {plan.includes.map((item, index) => (
+              {plan.includes.map((item) => (
                 <li key={item} className="flex items-start gap-4">
                   <span className="font-[var(--font-barlow)] text-xl font-black text-[#91C900]">
                     ✓
